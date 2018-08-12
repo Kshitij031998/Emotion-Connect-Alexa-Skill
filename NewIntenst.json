@@ -1,0 +1,16 @@
+            {
+                    "name": "FoodConnect",
+                    "slots": [],
+                    "samples": [
+                        "Find some one who likes same food as me.",
+                        "Connect me with some one who likes same food as me."
+                    ]
+                },
+                {
+                    "name": "PlaceConnect",
+                    "slots": [],
+                    "samples": [
+                        "Connect me with some one who likes same Place as me.",
+                        "Find some one who likes same Place as me."
+                    ]
+                }
