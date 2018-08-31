@@ -1,0 +1,524 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my emotion",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "emotion help me",
+                        "Some one help me",
+                        "Help me please",
+                        "My Emotion Please help.",
+                        "Can I get some help",
+                        "Help me"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TellYourName",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "samples": [
+                                "I'm {name}",
+                                "My name is {name}",
+                                "I am {name}",
+                                "{name}"
+                            ]
+                        },
+                        {
+                            "name": "PhoneNumber",
+                            "type": "AMAZON.PhoneNumber",
+                            "samples": [
+                                "{PhoneNumber}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I am {name}",
+                        "I'm {name}",
+                        "My name is {name}"
+                    ]
+                },
+                {
+                    "name": "MyDay",
+                    "slots": [
+                        {
+                            "name": "Food",
+                            "type": "AMAZON.Food",
+                            "samples": [
+                                "I ate {Food}",
+                                "{Food}",
+                                "I had {Food}"
+                            ]
+                        },
+                        {
+                            "name": "FoodExperience",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{FoodExperience}"
+                            ]
+                        },
+                        {
+                            "name": "Person",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "samples": [
+                                "I had a meeting with {Person}",
+                                "Yes I met {Person}",
+                                "I met {Person}"
+                            ]
+                        },
+                        {
+                            "name": "PersonExperience",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{PersonExperience}"
+                            ]
+                        },
+                        {
+                            "name": "Place",
+                            "type": "AMAZON.US_CITY",
+                            "samples": [
+                                "{Place}",
+                                "I had been to {Place}"
+                            ]
+                        },
+                        {
+                            "name": "PlaceExperience",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{PlaceExperience}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I would like to share my day",
+                        "to share my day",
+                        "that I would like to share my day",
+                        "Here is my day"
+                    ]
+                },
+                {
+                    "name": "FoodConnect",
+                    "slots": [],
+                    "samples": [
+                        "Connect me with some one who like the same food as me",
+                        "Connect me with some one who likes the same food as me.",
+                        "and connect me with some one who like the same food as I do.",
+                        "Connect me with some one who like the same Food as I do.",
+                        "Connect me with some one who likes the same Food as I do.",
+                        "and connect me with some one who likes the same food as I do.",
+                        "Connect me with some one who likes same Food as I do.",
+                        "and connect me with some one who likes the same food as me.",
+                        "and connect me with some one who likes same food as me.",
+                        "Find some one who likes same food as me.",
+                        "Connect me with some one who likes same food as me."
+                    ]
+                },
+                {
+                    "name": "PlaceConnect",
+                    "slots": [],
+                    "samples": [
+                        "Connect me with some one who like the same place as me.",
+                        "Connect me with some one who likes same Place I do.",
+                        "Connect me with some one who likes the same Place as I do.",
+                        "and Connect me with some one who likes same Place as I do",
+                        "and Connect me with some one who likes same Place as me.",
+                        "Connect me with some one who likes the same Place as me.",
+                        "Connect me with some one who likes same Place as me.",
+                        "Find some one who likes same Place as me."
+                    ]
+                },
+                {
+                    "name": "DontShareNumber",
+                    "slots": [],
+                    "samples": [
+                        "remove my phone number",
+                        "Disable contact sharing",
+                        "Stop sharing my number",
+                        "Please dont share my phone number."
+                    ]
+                },
+                {
+                    "name": "END",
+                    "slots": [],
+                    "samples": [
+                        "Bye Emotion",
+                        "Yes lets end this",
+                        "Lets stop",
+                        "End"
+                    ]
+                },
+                {
+                    "name": "FoodIlike",
+                    "slots": [],
+                    "samples": [
+                        "What food  do I like.",
+                        "please provide me food suggestions",
+                        "food suggestions",
+                        "help me with some food suggestions",
+                        "give me some food suggestions",
+                        "What food  do I like the most.",
+                        "What food I like the most."
+                    ]
+                },
+                {
+                    "name": "PlaceIlike",
+                    "slots": [],
+                    "samples": [
+                        "Which are the place I like.",
+                        "Which place do I like",
+                        "Suggest me places",
+                        "Suggest me some places I like",
+                        "Place I like",
+                        "Which place i like the most",
+                        "Which place do i like the most"
+                    ]
+                },
+                {
+                    "name": "PersonILike",
+                    "slots": [],
+                    "samples": [
+                        "People I like",
+                        "Give me some suggestion on peope",
+                        "Help me with people suggestion",
+                        "Whom do I like",
+                        "Whom do I like the most"
+                    ]
+                },
+                {
+                    "name": "getSuggestions",
+                    "slots": [],
+                    "samples": [
+                        "and help me with some suggestions.",
+                        "to help me with some suggestions",
+                        "help me with some suggestions",
+                        "that i would like to get some suggestions",
+                        "to get some suggestions",
+                        "get me some suggestions",
+                        "I would like to get some suggestions",
+                        "give suggestions",
+                        "give me suggestions",
+                        "help me with suggestions",
+                        "get some suggestions"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "MyDay",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Food",
+                            "type": "AMAZON.Food",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.885120840643.1188656470100"
+                            }
+                        },
+                        {
+                            "name": "FoodExperience",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.885120840643.150322989111"
+                            }
+                        },
+                        {
+                            "name": "Person",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.885120840643.189690901284"
+                            }
+                        },
+                        {
+                            "name": "PersonExperience",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.885120840643.871644377872"
+                            }
+                        },
+                        {
+                            "name": "Place",
+                            "type": "AMAZON.US_CITY",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1101418153430.937438552637"
+                            }
+                        },
+                        {
+                            "name": "PlaceExperience",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.316761220482.688542698546"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TellYourName",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.746479682090"
+                    },
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1391120574011.1088436595515",
+                                "elicitation": "Elicit.Slot.70611266748.407521925493"
+                            }
+                        },
+                        {
+                            "name": "PhoneNumber",
+                            "type": "AMAZON.PhoneNumber",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1391120574011.897775911818",
+                                "elicitation": "Elicit.Slot.70611266748.927492406357"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Slot.1192287092748.1318963346220",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Your name is {name} , right ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1484817059437.588645895193",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is your name?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1484817059437.588645895193",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Your name is {Name} , correct?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.467089130535.1312834694173",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Where had been to  today?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.467089130535.664548764698",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How was it?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1101418153430.937438552637",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Where had you been to today?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.723350493784.420826681831",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How was it?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.723350493784.420826681831",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "{PlaceExperience}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.885120840643.189690901284",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Did you get to know anyone today. If yes May I know their name .You can say skip if you did not meet anyone new."
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Did you meet anyone special today. today. If yes May I know their name. You can say skip if you did not meet anyone special."
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.885120840643.1188656470100",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Did you try anything different today for filling your tummy. You can say skip if you had the same routine food."
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What special food did you have today. You can say skip if you had the same routine food."
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.885120840643.150322989111",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What did you feel about {Food}"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Was {Food} of any good?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "How was {Food} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.885120840643.871644377872",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How was your meeting with {Person}"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.885120840643.871644377872",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "{FoodExperience}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.316761220482.688542698546",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How was {Place}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.233018536397.48087776423",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is the name of the food?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.233018536397.826532180925",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How was {Food}"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.746479682090",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Do you want me to share your number with people with similar interests so that they can contact you?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.70611266748.407521925493",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry, What was your name again?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.70611266748.927492406357",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Thankyou {name} . To help others connect with you , Could you please share your phone number. You can disable contact sharing anytime by saying ,Please dont share my phone number."
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1391120574011.1088436595515",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Your name is {name} , Did I get it right.  You can confirm by saying yes or no."
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1391120574011.897775911818",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Your number is {PhoneNumber} , Did i get it right. You can confirm it by saying yes or no."
+                    }
+                ]
+            }
+        ]
+    }
+}
