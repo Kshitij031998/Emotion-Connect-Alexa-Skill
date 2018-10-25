@@ -31,3 +31,5 @@ Flow of Events
 3. When the user wants to know what he likes the most we query our database and provide top three foods,
    places and people he likes. If he wishes to connect with people with similar sentiments we will query our server 
    and provide the contact information of best matches who are also willing to connect.
+
+https://youtu.be/NOukRmxe4Ac
